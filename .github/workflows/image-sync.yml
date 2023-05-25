@@ -29,6 +29,7 @@ jobs:
         
     - name: add sercret to file
       run: |
+        echo $USERNAME
         envsubst < config_source.yaml > config.yaml
         cat config.yaml
 
