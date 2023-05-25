@@ -28,10 +28,7 @@ jobs:
         tar -zxf image-syncer-${IMAGE_SYNCER_VERSION}-linux-amd64.tar.gz
         
     - name: add sercret to file
-      run: |
-        echo $USERNAME
-        envsubst < config_source.yaml > config.yaml
-        cat config.yaml
+      run: envsubst < config_source.yaml > config.yaml
 
     - name: sync images
       run: ./image-syncer --proc=10 --config=config.yaml --retries=2
