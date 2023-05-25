@@ -7,3 +7,4 @@ auth:
     password: $PASSWORD
 images:
   registry.k8s.io/kube-apiserver:v1.27.2: registry.aliyuncs.com/wanglulin/kube-apiserver
+  registry.k8s.io/kube-scheduler:v1.27.2: registry.aliyuncs.com/wanglulin/kube-scheduler
