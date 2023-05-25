@@ -3,18 +3,18 @@ auth:
     username: $USERNAME
     password: $PASSWORD
 images:
-  registry.k8s.io/metrics-server/metrics-server: wanglulin/metrics-server
-  registry.k8s.io/ingress-nginx/controller: wanglulin/ingress-nginx-controller
-  registry.k8s.io/git-sync/git-sync: wanglulin/git-sync
-  #gcr.io/kaniko-project/executor:debug,latest: wanglulin/kaniko-executor
-  registry.k8s.io/kube-state-metrics/kube-state-metrics: wanglulin/kube-state-metrics
-  registry.k8s.io/sig-storage/nfs-subdir-external-provisioner: wanglulin/nfs-subdir-external-provisioner
-  registry.k8s.io/prometheus-adapter/prometheus-adapter: wanglulin/prometheus-adapter
+  # registry.k8s.io/metrics-server/metrics-server: wanglulin/metrics-server
+  # registry.k8s.io/ingress-nginx/controller: wanglulin/ingress-nginx-controller
+  # registry.k8s.io/git-sync/git-sync: wanglulin/git-sync
+  # #gcr.io/kaniko-project/executor:debug,latest: wanglulin/kaniko-executor
+  # registry.k8s.io/kube-state-metrics/kube-state-metrics: wanglulin/kube-state-metrics
+  # registry.k8s.io/sig-storage/nfs-subdir-external-provisioner: wanglulin/nfs-subdir-external-provisioner
+  # registry.k8s.io/prometheus-adapter/prometheus-adapter: wanglulin/prometheus-adapter
   # kubernetes image
-  registry.k8s.io/kube-apiserver: wanglulin/kube-apiserver
-  registry.k8s.io/kube-controller-manager: wanglulin/kube-controller-manager
-  registry.k8s.io/kube-scheduler: wanglulin/kube-scheduler
-  registry.k8s.io/kube-proxy: wanglulin/kube-proxy
-  registry.k8s.io/pause: wanglulin/pause
-  registry.k8s.io/etcd: wanglulin/etcd
-  registry.k8s.io/coredns/coredns: wanglulin/coredns
+  k8s.gcr.io/kube-apiserver: wanglulin/kube-apiserver
+  # registry.k8s.io/kube-controller-manager: wanglulin/kube-controller-manager
+  # registry.k8s.io/kube-scheduler: wanglulin/kube-scheduler
+  # registry.k8s.io/kube-proxy: wanglulin/kube-proxy
+  # registry.k8s.io/pause: wanglulin/pause
+  # registry.k8s.io/etcd: wanglulin/etcd
+  # registry.k8s.io/coredns/coredns: wanglulin/coredns
