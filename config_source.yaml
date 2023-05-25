@@ -1,5 +1,5 @@
 auth:
-  registry.cn-shenzhen.aliyuncs.com:
+  registry.cn-hangzhou.aliyuncs.com:
     username: $USERNAME
     password: $PASSWORD
 images:
