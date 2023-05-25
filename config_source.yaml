@@ -11,7 +11,7 @@ images:
   # registry.k8s.io/sig-storage/nfs-subdir-external-provisioner: wanglulin/nfs-subdir-external-provisioner
   # registry.k8s.io/prometheus-adapter/prometheus-adapter: wanglulin/prometheus-adapter
   # kubernetes image
-  k8s.gcr.io/kube-apiserver:v1.27.1,v1.27.2: wanglulin/kube-apiserver
+  registry.k8s.io/kube-apiserver:v1.27.1,v1.27.2: registry.aliyuncs.com/wanglulin/kube-apiserver
   # registry.k8s.io/kube-controller-manager: wanglulin/kube-controller-manager
   # registry.k8s.io/kube-scheduler: wanglulin/kube-scheduler
   # registry.k8s.io/kube-proxy: wanglulin/kube-proxy
