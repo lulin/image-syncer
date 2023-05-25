@@ -2,7 +2,7 @@ auth:
   registry.cn-hangzhou.aliyuncs.com:
     username: $USERNAME
     password: $PASSWORD
-  registry.cn-hangzhou.aliyuncs.com:
+  registry.aliyuncs.com:
     username: $USERNAME
     password: $PASSWORD
 images:
