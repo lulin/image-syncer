@@ -20,5 +20,4 @@ jobs:
 
     - name: "Skopeo"
       run: |
-        chmod +x ./sync.sh
         sh ./sync.sh
