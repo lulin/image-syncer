@@ -1,2 +1,2 @@
-registry.k8s.io/kube-apiserver:v1.27.2 registry.aliyuncs.com/wanglulin
-registry.k8s.io/etcd:v1.27.2 registry.aliyuncs.com/wanglulin
+registry.k8s.io/kube-apiserver:v1.27.2 registry.cn-hangzhou.aliyuncs.com/wanglulin
+registry.k8s.io/etcd:v1.27.2 registry.cn-hangzhou.aliyuncs.com/wanglulin
