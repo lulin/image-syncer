@@ -1,0 +1,15 @@
+name: skopeo
+on:
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Skopeo"
+        run: |    
+          skopeo --version
+          skopeo inspect docker://registry.k8s.io/kube-apiserver:latest
