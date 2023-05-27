@@ -3,9 +3,9 @@
 name: image-sync
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [ ali-image-syncer ]
+  # pull_request:
+  #   branches: [ main ]
   # schedule:
   #   - cron: '0 22 * * *'
 
