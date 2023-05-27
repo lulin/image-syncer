@@ -1,8 +1,8 @@
-while read line
+for line in $(cat sync.list)
 do
   echo ${line}
-  skopeo sync --dest-creds ${USERNAME}:${PASSWORD} --src docker --dest docker registry.k8s.io/pause:3.5.7 registry.cn-hangzhou.aliyuncs.com/wanglulin
-  skopeo sync --dest-creds ${USERNAME}:${PASSWORD} --src docker --dest docker ${line}
-done < sync.list
+  echo $line
+  skopeo sync --dest-creds ${USERNAME}:${PASSWORD} --src docker --dest docker $line registry.cn-hangzhou.aliyuncs.com/wanglulin
+done
 
 exit $?
