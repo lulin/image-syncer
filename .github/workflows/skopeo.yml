@@ -12,7 +12,7 @@ env:
   PASSWORD: ${{ secrets.ALIYUN_PASSWORD }}
 
 jobs:
-  skopeo sync:
+  sync:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
