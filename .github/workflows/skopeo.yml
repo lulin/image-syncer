@@ -19,5 +19,6 @@ jobs:
       uses: actions/checkout@v2
 
     - name: "Skopeo"
-      run: |    
+      run: |
+        cat sync.list
         while read line ; do skopeo sync --dest-creds ${USERNAME}:${PASSWORD} --src docker --dest docker $line; done < sync.list
