@@ -10,14 +10,14 @@ on:
 env:
   USERNAME: ${{ secrets.ALIYUN_USERNAME }}
   PASSWORD: ${{ secrets.ALIYUN_PASSWORD }}
-  SYNC_LIST:
-    - registry.k8s.io/kube-apiserver:v1.27.2 registry.aliyuncs.com/wanglulin
 
 jobs:
   sample:
     runs-on: ubuntu-latest
     steps:
-      - name: "Skopeo"
-        run: |    
-          echo ${SYNC_LIST}
-          skopeo sync --dest-creds ${USERNAME}:${PASSWORD} --src docker --dest docker registry.k8s.io/kube-controller-manager:v1.27.2 registry.aliyuncs.com/wanglulin/
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: "Skopeo"
+      run: |    
+        while read line ; do skopeo sync --dest-creds ${USERNAME}:${PASSWORD} --src docker --dest docker $line; done < sync.list
