@@ -2,8 +2,12 @@ name: skopeo
 on:
   pull_request:
     branches:
-      - master
+      - skopeo-sync
   workflow_dispatch:
+
+env:
+  USERNAME: ${{ secrets.ALIYUN_USERNAME }}
+  PASSWORD: ${{ secrets.ALIYUN_PASSWORD }}
 
 jobs:
   sample:
@@ -12,4 +16,4 @@ jobs:
       - name: "Skopeo"
         run: |    
           skopeo --version
-          skopeo inspect docker://registry.k8s.io/kube-apiserver:latest
+          skopeo sync --dest-creds ${USERNAME}:${PASSWORD} --src docker --dest docker registry.k8s.io/kube-controller-manager:v1.27.2 registry.aliyuncs.com/wanglulin/
