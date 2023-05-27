@@ -20,4 +20,5 @@ jobs:
 
     - name: "Skopeo"
       run: |
-        sh ./sync.sh
+        # $1=images list, $2=dest registry, $3=namespace
+        sh ./sync.sh sync.list registry.cn-hangzhou.aliyuncs.com wanglulin
